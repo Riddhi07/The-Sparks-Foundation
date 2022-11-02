@@ -1,0 +1,7 @@
+Following resources will be created:
+  - azurerm_resource_group
+  - azurerm_storage_account
+  - azurerm_application_insights
+
+Note that this example may create resources which cost money.
+Run `npm run destroy` at root of this folder, to destoy the created resources.

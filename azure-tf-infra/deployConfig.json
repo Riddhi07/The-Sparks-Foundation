@@ -1,0 +1,11 @@
+{
+    "region": "eastus2",
+    "resource_group_name": "kloudjet-angular-rg",
+    "storage_account_name": "kloudjetangularstorage01",
+    "account_kind": "StorageV2",
+    "account_tier": "Standard",
+    "account_replication_type": "LRS",
+    "index_document": "index.html",
+    "appinsights_name": "kloudjet-azure-angular",
+    "application_type": "web"
+}

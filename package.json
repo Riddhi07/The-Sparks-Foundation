@@ -1,0 +1,22 @@
+{
+  "name": "parcel-typescript-template",
+  "version": "1.0.0",
+  "description": "Template for a deployable Angular app",
+  "keywords": [
+    "angular",
+    "azure",
+    "template",
+    "parcel",
+    "terraform"
+  ],
+  "private": true,
+  "scripts": {
+    "deploy": "npm-run-all -s azure-tf-infra:deploy angular-frontend:deploy",
+    "postinstall": "npm-run-all -s azure-tf-infra:install angular-frontend:install",
+    "azure-tf-infra:deploy": "cd azure-tf-infra && npm run deploy",
+    "azure-tf-infra:destroy": "cd azure-tf-infra && npm run destroy",
+    "azure-tf-infra:install": "cd azure-tf-infra && npm install",
+    "angular-frontend:deploy": "cd angular-frontend && npm run build",
+    "angular-frontend:install": "cd angular-frontend && npm install --save-dev"
+  }
+}
